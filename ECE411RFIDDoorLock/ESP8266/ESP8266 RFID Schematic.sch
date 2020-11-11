@@ -2674,8 +2674,8 @@ Op. Temp: -40~85°C</text>
 <symbol name="3.3V">
 <wire x1="-1.27" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<text x="-1.524" y="1.016" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="3.3V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="-1.524" y="1.016" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="RESISTOR">
 <wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
@@ -7017,7 +7017,7 @@ Allows current flow when high potential at base.</description>
 <part name="SW1" library="microbuilder" deviceset="SWITCH_TACT_SMT" device=""/>
 <part name="U$1" library="microbuilder" deviceset="VBUS" device=""/>
 <part name="U$2" library="microbuilder" deviceset="VBAT" device=""/>
-<part name="C1" library="microbuilder" deviceset="CAP_CERAMIC" device="0603MINI"/>
+<part name="C1" library="microbuilder" deviceset="CAP_CERAMIC" device="0603MINI" value="10µF"/>
 <part name="U$3" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="R1" library="microbuilder" deviceset="RESISTOR" device="0603MINI" value="10k"/>
 <part name="C2" library="microbuilder" deviceset="CAP_CERAMIC" device="0603MINI" value="10µF"/>
@@ -7027,21 +7027,21 @@ Allows current flow when high potential at base.</description>
 <part name="GND3" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND4" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="R2" library="microbuilder" deviceset="RESISTOR" device="0603MINI"/>
+<part name="R2" library="microbuilder" deviceset="RESISTOR" device="0603MINI" value="1k"/>
 <part name="U$6" library="microbuilder" deviceset="3.3V" device=""/>
-<part name="R3" library="microbuilder" deviceset="RESISTOR" device="0603MINI"/>
+<part name="R3" library="microbuilder" deviceset="RESISTOR" device="0603MINI" value="10k"/>
 <part name="U$9" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U$10" library="microbuilder" deviceset="3.3V" device=""/>
-<part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="0603MINI"/>
-<part name="R4" library="microbuilder" deviceset="RESISTOR" device="0603MINI"/>
+<part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="0603MINI" value="1µF"/>
+<part name="R4" library="microbuilder" deviceset="RESISTOR" device="0603MINI" value="4.7k"/>
 <part name="D2" library="microbuilder" deviceset="LED" device="0603"/>
 <part name="U$11" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="T1" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="TRANS_NPN" device="-MMBT2222AL" package3d_urn="urn:adsk.eagle:package:38446/1" value="600mA/40V"/>
 <part name="T2" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" deviceset="TRANS_NPN" device="-MMBT2222AL" package3d_urn="urn:adsk.eagle:package:38446/1" value="600mA/40V"/>
-<part name="R5" library="microbuilder" deviceset="RESISTOR" device="0603MINI"/>
-<part name="R6" library="microbuilder" deviceset="RESISTOR" device="0603MINI"/>
+<part name="R5" library="microbuilder" deviceset="RESISTOR" device="0603MINI" value="10k"/>
+<part name="R6" library="microbuilder" deviceset="RESISTOR" device="0603MINI" value="10k"/>
 <part name="M1" library="SparkFun-Electromechanical" deviceset="SERVO" device=""/>
 <part name="U$14" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$15" library="microbuilder" deviceset="VBAT" device=""/>
@@ -7050,7 +7050,7 @@ Allows current flow when high potential at base.</description>
 <part name="U$17" library="microbuilder" deviceset="GND" device=""/>
 <part name="Q3" library="microbuilder" deviceset="MOSFET-P" device="" value="DMG341"/>
 <part name="D4" library="microbuilder" deviceset="DIODE-SCHOTTKY" device="SOD-123" value="MBR0540"/>
-<part name="R7" library="microbuilder" deviceset="RESISTOR" device="0603MINI" value="10k"/>
+<part name="R7" library="microbuilder" deviceset="RESISTOR" device="0603MINI" value="100k"/>
 <part name="GND8" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U$7" library="microbuilder" deviceset="VBAT" device=""/>
@@ -7065,6 +7065,13 @@ Allows current flow when high potential at base.</description>
 <part name="GND13" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="J2" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
 <part name="J3" library="SparkFun-Connectors" library_urn="urn:adsk.eagle:library:513" deviceset="CONN_02" device="" package3d_urn="urn:adsk.eagle:package:38039/1"/>
+<part name="U$4" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="R8" library="microbuilder" deviceset="RESISTOR" device="0603MINI" value="4.7k"/>
+<part name="GND11" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
+<part name="R9" library="microbuilder" deviceset="RESISTOR" device="0603MINI" value="10k"/>
+<part name="U$5" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="R10" library="microbuilder" deviceset="RESISTOR" device="0603MINI" value="10k"/>
+<part name="U$12" library="microbuilder" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7093,6 +7100,8 @@ To-Do List:
 <text x="30.48" y="73.66" size="1.778" layer="91">3.3V</text>
 <text x="17.78" y="81.28" size="2.54" layer="91">RC522 RFID Sensor</text>
 <text x="20.32" y="25.4" size="2.54" layer="91">Servo</text>
+<text x="63.5" y="93.98" size="1.778" layer="91">Linear Regulator</text>
+<text x="50.8" y="132.08" size="1.778" layer="91">LIPO Battery Port</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="190.5" y="132.08" smashed="yes">
@@ -7153,8 +7162,8 @@ To-Do List:
 <attribute name="NAME" x="198.12" y="45.72" size="1.27" layer="95" font="vector" align="center"/>
 <attribute name="VALUE" x="198.12" y="43.18" size="1.016" layer="96" font="vector" ratio="15" align="center"/>
 </instance>
-<instance part="U$6" gate="G$1" x="114.3" y="25.4" smashed="yes">
-<attribute name="VALUE" x="112.776" y="26.416" size="1.27" layer="96"/>
+<instance part="U$6" gate="G$1" x="116.84" y="25.4" smashed="yes">
+<attribute name="VALUE" x="115.316" y="26.416" size="1.27" layer="96"/>
 </instance>
 <instance part="R3" gate="G$1" x="132.08" y="76.2" smashed="yes" rot="R90">
 <attribute name="NAME" x="129.54" y="76.2" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
@@ -7282,6 +7291,30 @@ To-Do List:
 <attribute name="VALUE" x="63.5" y="20.574" size="1.778" layer="96" font="vector"/>
 <attribute name="NAME" x="63.5" y="30.988" size="1.778" layer="95" font="vector"/>
 </instance>
+<instance part="U$4" gate="G$1" x="88.9" y="116.84" smashed="yes">
+<attribute name="VALUE" x="87.376" y="117.856" size="1.27" layer="96"/>
+</instance>
+<instance part="R8" gate="G$1" x="172.72" y="22.86" smashed="yes" rot="R90">
+<attribute name="NAME" x="170.18" y="22.86" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
+<attribute name="VALUE" x="172.72" y="22.86" size="1.016" layer="96" font="vector" ratio="15" rot="R90" align="center"/>
+</instance>
+<instance part="GND11" gate="1" x="172.72" y="12.7" smashed="yes">
+<attribute name="VALUE" x="172.72" y="12.446" size="1.778" layer="96" align="top-center"/>
+</instance>
+<instance part="R9" gate="G$1" x="96.52" y="45.72" smashed="yes" rot="R90">
+<attribute name="NAME" x="93.98" y="45.72" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
+<attribute name="VALUE" x="96.52" y="45.72" size="1.016" layer="96" font="vector" ratio="15" rot="R90" align="center"/>
+</instance>
+<instance part="U$5" gate="G$1" x="96.52" y="53.34" smashed="yes">
+<attribute name="VALUE" x="94.996" y="54.356" size="1.27" layer="96"/>
+</instance>
+<instance part="R10" gate="G$1" x="180.34" y="30.48" smashed="yes" rot="R90">
+<attribute name="NAME" x="177.8" y="30.48" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
+<attribute name="VALUE" x="180.34" y="30.48" size="1.016" layer="96" font="vector" ratio="15" rot="R90" align="center"/>
+</instance>
+<instance part="U$12" gate="G$1" x="180.34" y="38.1" smashed="yes">
+<attribute name="VALUE" x="178.816" y="39.116" size="1.27" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7400,6 +7433,11 @@ To-Do List:
 <pinref part="GND13" gate="1" pin="GND"/>
 <wire x1="73.66" y1="25.4" x2="76.2" y2="25.4" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND11" gate="1" pin="GND"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="172.72" y1="15.24" x2="172.72" y2="17.78" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="GPIO14/SCK" class="0">
 <segment>
@@ -7474,6 +7512,8 @@ To-Do List:
 <pinref part="X1" gate="G$1" pin="GPIO15"/>
 <wire x1="154.94" y1="30.48" x2="172.72" y2="30.48" width="0.1524" layer="91"/>
 <label x="157.48" y="30.48" size="1.778" layer="95"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="27.94" x2="172.72" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="81.28" y1="55.88" x2="68.58" y2="55.88" width="0.1524" layer="91"/>
@@ -7519,8 +7559,11 @@ To-Do List:
 <net name="GPIO2" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="GPIO2"/>
-<wire x1="154.94" y1="33.02" x2="172.72" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="33.02" x2="175.26" y2="33.02" width="0.1524" layer="91"/>
 <label x="157.48" y="33.02" size="1.778" layer="95"/>
+<wire x1="175.26" y1="33.02" x2="175.26" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="25.4" x2="180.34" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="81.28" y1="48.26" x2="68.58" y2="48.26" width="0.1524" layer="91"/>
@@ -7581,7 +7624,7 @@ To-Do List:
 <segment>
 <pinref part="T2" gate="G$1" pin="C"/>
 <wire x1="177.8" y1="66.04" x2="177.8" y2="48.26" width="0.1524" layer="91"/>
-<label x="180.34" y="48.26" size="1.778" layer="95"/>
+<label x="177.8" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ADC" class="0">
@@ -7630,8 +7673,9 @@ To-Do List:
 <net name="CH_PD" class="0">
 <segment>
 <pinref part="X1" gate="G$1" pin="CH_PD"/>
-<wire x1="119.38" y1="40.64" x2="101.6" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="40.64" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
 <label x="101.6" y="40.64" size="1.778" layer="95"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="JP4" gate="A" pin="1"/>
@@ -7655,7 +7699,7 @@ To-Do List:
 <segment>
 <pinref part="U$6" gate="G$1" pin="3.3V"/>
 <pinref part="X1" gate="G$1" pin="VCC"/>
-<wire x1="114.3" y1="22.86" x2="119.38" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="22.86" x2="119.38" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="22.86" x2="119.38" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -7685,17 +7729,26 @@ To-Do List:
 <pinref part="U$8" gate="G$1" pin="3.3V"/>
 </segment>
 <segment>
+<pinref part="C3" gate="G$1" pin="1"/>
+<pinref part="U$3" gate="G$1" pin="3.3V"/>
+<wire x1="99.06" y1="114.3" x2="99.06" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
 <pinref part="U3" gate="G$1" pin="OUT"/>
 <wire x1="81.28" y1="109.22" x2="88.9" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="109.22" x2="88.9" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="88.9" y1="109.22" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="3.3V"/>
+<wire x1="88.9" y1="114.3" x2="88.9" y2="109.22" width="0.1524" layer="91"/>
 <junction x="88.9" y="109.22"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="109.22" x2="99.06" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="3.3V"/>
-<wire x1="99.06" y1="114.3" x2="99.06" y2="109.22" width="0.1524" layer="91"/>
-<junction x="99.06" y="109.22"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="U$5" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="U$12" gate="G$1" pin="3.3V"/>
 </segment>
 </net>
 <net name="N$2" class="0">
