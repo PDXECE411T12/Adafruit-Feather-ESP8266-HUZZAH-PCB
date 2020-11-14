@@ -1336,10 +1336,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="1.27" y="2.54" extent="1-16" drill="0.55"/>
 <via x="1.27" y="9.525" extent="1-16" drill="0.55"/>
 <via x="1.27" y="15.24" extent="1-16" drill="0.55"/>
-<via x="35.56" y="30.48" extent="1-16" drill="0.35"/>
-<via x="22.86" y="18.415" extent="1-16" drill="0.55"/>
-<wire x1="35.56" y1="30.48" x2="34.925" y2="34.925" width="0" layer="19" extent="1-1"/>
-<wire x1="22.86" y1="18.415" x2="18.415" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBAT" class="3">
 <contactref element="Q3" pad="3"/>

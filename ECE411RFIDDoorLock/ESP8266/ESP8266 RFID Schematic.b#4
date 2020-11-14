@@ -1856,6 +1856,69 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <signal name="EN">
 <contactref element="JP5" pad="2"/>
 </signal>
+<signal name="N$1">
+<via x="3.81" y="12.065" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$2">
+<via x="3.81" y="22.225" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$9">
+<via x="3.81" y="36.83" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$11">
+<via x="17.145" y="37.465" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$15">
+<via x="13.335" y="37.465" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$16">
+<via x="20.955" y="37.465" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$17">
+<via x="46.355" y="36.83" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$18">
+<via x="50.165" y="36.83" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$19">
+<via x="47.625" y="34.29" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$20">
+<via x="50.8" y="3.175" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$21">
+<via x="59.055" y="37.465" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$22">
+<via x="59.055" y="28.575" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$23">
+<via x="59.055" y="19.05" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$24">
+<via x="59.055" y="5.08" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$25">
+<via x="17.78" y="3.175" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$26">
+<via x="18.415" y="12.7" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$27">
+<via x="15.875" y="8.89" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$28">
+<via x="19.685" y="10.16" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$29">
+<via x="13.335" y="27.305" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$30">
+<via x="13.335" y="30.48" extent="1-16" drill="0.55"/>
+</signal>
+<signal name="N$31">
+<via x="34.925" y="34.925" extent="1-16" drill="0.55"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>

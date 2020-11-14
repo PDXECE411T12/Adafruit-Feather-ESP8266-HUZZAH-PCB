@@ -7033,7 +7033,6 @@ Allows current flow when high potential at base.</description>
 <part name="U$9" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="GND6" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
-<part name="U$10" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="C4" library="microbuilder" deviceset="CAP_CERAMIC" device="0603MINI" value="1µF"/>
 <part name="R4" library="microbuilder" deviceset="RESISTOR" device="0603MINI" value="4.7k"/>
 <part name="D2" library="microbuilder" deviceset="LED" device="0603"/>
@@ -7072,6 +7071,8 @@ Allows current flow when high potential at base.</description>
 <part name="U$5" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="R10" library="microbuilder" deviceset="RESISTOR" device="0603MINI" value="10k"/>
 <part name="U$12" library="microbuilder" deviceset="3.3V" device=""/>
+<part name="U$13" library="microbuilder" deviceset="VBUS" device=""/>
+<part name="U$10" library="microbuilder" deviceset="VBUS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7178,9 +7179,6 @@ To-Do List:
 <instance part="GND7" gate="1" x="170.18" y="132.08" smashed="yes">
 <attribute name="VALUE" x="170.18" y="131.826" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="U$10" gate="G$1" x="165.1" y="149.86" smashed="yes">
-<attribute name="VALUE" x="163.576" y="150.876" size="1.27" layer="96"/>
-</instance>
 <instance part="C4" gate="G$1" x="160.02" y="142.24" smashed="yes">
 <attribute name="NAME" x="157.73" y="143.49" size="1.27" layer="95" font="vector" rot="R90" align="center"/>
 <attribute name="VALUE" x="162.32" y="143.49" size="1.27" layer="96" font="vector" rot="R90" align="center"/>
@@ -7260,8 +7258,8 @@ To-Do List:
 <attribute name="NAME" x="134.62" y="130.556" size="1.27" layer="95"/>
 <attribute name="VALUE" x="134.62" y="111.76" size="1.27" layer="96"/>
 </instance>
-<instance part="U$19" gate="G$1" x="76.2" y="68.58" smashed="yes">
-<attribute name="VALUE" x="74.676" y="69.596" size="1.27" layer="96"/>
+<instance part="U$19" gate="G$1" x="88.9" y="68.58" smashed="yes">
+<attribute name="VALUE" x="87.376" y="69.596" size="1.27" layer="96"/>
 </instance>
 <instance part="U$20" gate="G$1" x="81.28" y="73.66" smashed="yes">
 <attribute name="VALUE" x="79.756" y="74.676" size="1.27" layer="96"/>
@@ -7315,11 +7313,17 @@ To-Do List:
 <instance part="U$12" gate="G$1" x="180.34" y="38.1" smashed="yes">
 <attribute name="VALUE" x="178.816" y="39.116" size="1.27" layer="96"/>
 </instance>
+<instance part="U$13" gate="G$1" x="160.02" y="129.54" smashed="yes">
+<attribute name="VALUE" x="158.496" y="130.556" size="1.27" layer="96"/>
+</instance>
+<instance part="U$10" gate="G$1" x="165.1" y="149.86" smashed="yes">
+<attribute name="VALUE" x="163.576" y="150.876" size="1.27" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="VBAT" class="0">
+<net name="VBAT" class="1">
 <segment>
 <pinref part="U$2" gate="G$1" pin="VBAT"/>
 <pinref part="Q3" gate="G$1" pin="D"/>
@@ -7342,14 +7346,41 @@ To-Do List:
 <wire x1="63.5" y1="124.46" x2="68.58" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VBUS" class="0">
+<net name="VBUS" class="1">
 <segment>
 <pinref part="U$19" gate="G$1" pin="VBUS"/>
-<wire x1="68.58" y1="66.04" x2="76.2" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="66.04" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="3"/>
 </segment>
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="22.86" y1="109.22" x2="22.86" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="G$1" pin="G"/>
+<wire x1="25.4" y1="116.84" x2="22.86" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="116.84" x2="22.86" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VBUS"/>
+<wire x1="20.32" y1="121.92" x2="20.32" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="109.22" x2="22.86" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="D4" gate="G$1" pin="A"/>
+<wire x1="25.4" y1="109.22" x2="22.86" y2="109.22" width="0.1524" layer="91"/>
+<junction x="22.86" y="109.22"/>
+<label x="20.32" y="114.3" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="VBUS"/>
+<wire x1="154.94" y1="127" x2="160.02" y2="127" width="0.1524" layer="91"/>
+<pinref part="X4" gate="G$1" pin="VBUS"/>
+<pinref part="U$13" gate="G$1" pin="VBUS"/>
+<wire x1="160.02" y1="127" x2="175.26" y2="127" width="0.1524" layer="91"/>
+<junction x="160.02" y="127"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="REGIN"/>
+<wire x1="175.26" y1="147.32" x2="165.1" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U$10" gate="G$1" pin="VBUS"/>
+</segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="SW1" gate="G$1" pin="P1"/>
@@ -7695,7 +7726,7 @@ To-Do List:
 <label x="210.82" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="3.3V" class="0">
+<net name="3.3V" class="1">
 <segment>
 <pinref part="U$6" gate="G$1" pin="3.3V"/>
 <pinref part="X1" gate="G$1" pin="VCC"/>
@@ -7716,11 +7747,6 @@ To-Do List:
 <pinref part="U$16" gate="G$1" pin="3.3V"/>
 <wire x1="27.94" y1="73.66" x2="30.48" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="73.66" x2="30.48" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="REGIN"/>
-<pinref part="U$10" gate="G$1" pin="3.3V"/>
-<wire x1="175.26" y1="147.32" x2="165.1" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="218.44" y1="55.88" x2="218.44" y2="53.34" width="0.1524" layer="91"/>
@@ -7749,13 +7775,6 @@ To-Do List:
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="U$12" gate="G$1" pin="3.3V"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="VBUS"/>
-<wire x1="154.94" y1="127" x2="175.26" y2="127" width="0.1524" layer="91"/>
-<pinref part="X4" gate="G$1" pin="VBUS"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -7820,14 +7839,6 @@ To-Do List:
 <wire x1="182.88" y1="71.12" x2="187.96" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$12" class="0">
-<segment>
-<wire x1="10.16" y1="139.7" x2="10.16" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="10.16" y1="86.36" x2="109.22" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="86.36" x2="109.22" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="139.7" x2="10.16" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$13" class="0">
 <segment>
 <wire x1="124.46" y1="99.06" x2="228.6" y2="99.06" width="0.1524" layer="91"/>
@@ -7854,21 +7865,6 @@ To-Do List:
 <junction x="30.48" y="109.22"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="22.86" y1="109.22" x2="22.86" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="Q3" gate="G$1" pin="G"/>
-<wire x1="25.4" y1="116.84" x2="22.86" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="116.84" x2="22.86" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VBUS"/>
-<wire x1="20.32" y1="121.92" x2="20.32" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="109.22" x2="22.86" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="D4" gate="G$1" pin="A"/>
-<wire x1="25.4" y1="109.22" x2="22.86" y2="109.22" width="0.1524" layer="91"/>
-<junction x="22.86" y="109.22"/>
-</segment>
-</net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="EN"/>
@@ -7893,14 +7889,34 @@ To-Do List:
 </net>
 <net name="EN" class="0">
 <segment>
-<wire x1="81.28" y1="68.58" x2="68.58" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="68.58" x2="68.58" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="JP5" gate="G$1" pin="2"/>
 <label x="81.28" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$1" class="1">
+<segment>
+<wire x1="15.24" y1="86.36" x2="15.24" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="137.16" x2="106.68" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="137.16" x2="106.68" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="86.36" x2="15.24" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,81.28,109.22,OUT,3.3V,,,,"/>
+<approved hash="202,1,205.74,127,U1G$1,RI,,,,"/>
+<approved hash="104,1,175.26,152.4,U1G$1,VIO,N$14,,,"/>
+<approved hash="104,1,175.26,149.86,U1G$1,VDD,N$14,,,"/>
+<approved hash="104,1,175.26,147.32,U1G$1,REGIN,VBUS,,,"/>
+<approved hash="202,1,205.74,124.46,U1G$1,DCD,,,,"/>
+<approved hash="202,1,205.74,119.38,U1G$1,DSR,,,,"/>
+<approved hash="202,1,205.74,109.22,U1G$1,CTS,,,,"/>
+<approved hash="104,1,119.38,27.94,X1,VCC,3.3V,,,"/>
+<approved hash="104,1,60.96,109.22,U3,IN,N$8,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

@@ -7008,6 +7008,8 @@ Allows current flow when high potential at base.</description>
 </class>
 <class number="1" name="power" width="0.508" drill="0">
 </class>
+<class number="2" name="ground" width="0.3048" drill="0">
+</class>
 </classes>
 <parts>
 <part name="U1" library="microbuilder" deviceset="CP2104" device=""/>
@@ -7380,7 +7382,7 @@ To-Do List:
 <pinref part="U$10" gate="G$1" pin="VBUS"/>
 </segment>
 </net>
-<net name="GND" class="1">
+<net name="GND" class="2">
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="SW1" gate="G$1" pin="P1"/>
