@@ -1273,7 +1273,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="0" y="0"/>
 </polygon>
 <contactref element="R8" pad="1"/>
-<polygon width="0.1524" layer="1">
+<polygon width="0.1524" layer="1" isolate="0.3048">
 <vertex x="0" y="43.815"/>
 <vertex x="24.765" y="43.815"/>
 <vertex x="24.765" y="35.56"/>
@@ -1284,6 +1284,58 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="0" y="0"/>
 </polygon>
 <via x="6.731" y="33.401" extent="1-16" drill="0.35"/>
+<wire x1="7.017" y1="30.595" x2="6.9618" y2="30.6502" width="0.3048" layer="1"/>
+<wire x1="6.9618" y1="30.6502" x2="6.53175" y2="30.6502" width="0.3048" layer="1"/>
+<wire x1="6.53175" y1="30.6502" x2="6.3122" y2="30.86975" width="0.3048" layer="1"/>
+<wire x1="6.3122" y1="30.86975" x2="6.3122" y2="31.32025" width="0.3048" layer="1"/>
+<wire x1="6.3122" y1="31.32025" x2="6.35" y2="31.35805" width="0.3048" layer="1"/>
+<wire x1="6.35" y1="33.02" x2="6.731" y2="33.401" width="0.3048" layer="1"/>
+<wire x1="6.35" y1="31.35805" x2="6.35" y2="33.02" width="0.3048" layer="1"/>
+<via x="8.255" y="21.59" extent="1-16" drill="0.35"/>
+<via x="3.81" y="12.065" extent="1-16" drill="0.55"/>
+<via x="17.78" y="3.175" extent="1-16" drill="0.55"/>
+<via x="15.875" y="8.89" extent="1-16" drill="0.55"/>
+<via x="18.415" y="12.7" extent="1-16" drill="0.55"/>
+<via x="19.685" y="10.16" extent="1-16" drill="0.55"/>
+<via x="3.81" y="22.225" extent="1-16" drill="0.55"/>
+<via x="13.335" y="27.305" extent="1-16" drill="0.55"/>
+<via x="13.335" y="30.48" extent="1-16" drill="0.55"/>
+<via x="3.81" y="36.83" extent="1-16" drill="0.55"/>
+<via x="13.335" y="37.465" extent="1-16" drill="0.55"/>
+<via x="17.145" y="37.465" extent="1-16" drill="0.55"/>
+<via x="20.955" y="37.465" extent="1-16" drill="0.55"/>
+<via x="34.925" y="34.925" extent="1-16" drill="0.55"/>
+<via x="46.355" y="36.83" extent="1-16" drill="0.55"/>
+<via x="47.625" y="34.29" extent="1-16" drill="0.55"/>
+<via x="50.165" y="36.83" extent="1-16" drill="0.55"/>
+<via x="59.055" y="37.465" extent="1-16" drill="0.55"/>
+<via x="59.055" y="28.575" extent="1-16" drill="0.55"/>
+<via x="59.055" y="19.05" extent="1-16" drill="0.55"/>
+<via x="59.055" y="5.08" extent="1-16" drill="0.55"/>
+<via x="50.8" y="3.175" extent="1-16" drill="0.55"/>
+<via x="1.27" y="33.655" extent="1-16" drill="0.55"/>
+<via x="1.27" y="27.305" extent="1-16" drill="0.55"/>
+<via x="1.27" y="21.59" extent="1-16" drill="0.55"/>
+<via x="1.27" y="40.005" extent="1-16" drill="0.55"/>
+<via x="13.335" y="42.545" extent="1-16" drill="0.55"/>
+<via x="21.59" y="42.545" extent="1-16" drill="0.55"/>
+<via x="24.13" y="38.1" extent="1-16" drill="0.55"/>
+<via x="30.48" y="34.925" extent="1-16" drill="0.55"/>
+<via x="39.37" y="34.925" extent="1-16" drill="0.55"/>
+<via x="46.355" y="41.91" extent="1-16" drill="0.55"/>
+<via x="53.34" y="42.545" extent="1-16" drill="0.55"/>
+<via x="59.69" y="42.545" extent="1-16" drill="0.55"/>
+<via x="59.69" y="10.795" extent="1-16" drill="0.55"/>
+<via x="59.055" y="1.27" extent="1-16" drill="0.55"/>
+<via x="52.07" y="1.27" extent="1-16" drill="0.55"/>
+<via x="44.45" y="1.27" extent="1-16" drill="0.55"/>
+<via x="36.83" y="1.27" extent="1-16" drill="0.55"/>
+<via x="26.67" y="1.27" extent="1-16" drill="0.55"/>
+<via x="17.78" y="1.27" extent="1-16" drill="0.55"/>
+<via x="8.89" y="1.27" extent="1-16" drill="0.55"/>
+<via x="1.27" y="2.54" extent="1-16" drill="0.55"/>
+<via x="1.27" y="9.525" extent="1-16" drill="0.55"/>
+<via x="1.27" y="15.24" extent="1-16" drill="0.55"/>
 </signal>
 <signal name="VBAT" class="3">
 <contactref element="Q3" pad="3"/>
@@ -1855,69 +1907,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </signal>
 <signal name="EN">
 <contactref element="JP5" pad="2"/>
-</signal>
-<signal name="N$1">
-<via x="3.81" y="12.065" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$2">
-<via x="3.81" y="22.225" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$9">
-<via x="3.81" y="36.83" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$11">
-<via x="17.145" y="37.465" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$15">
-<via x="13.335" y="37.465" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$16">
-<via x="20.955" y="37.465" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$17">
-<via x="46.355" y="36.83" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$18">
-<via x="50.165" y="36.83" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$19">
-<via x="47.625" y="34.29" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$20">
-<via x="50.8" y="3.175" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$21">
-<via x="59.055" y="37.465" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$22">
-<via x="59.055" y="28.575" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$23">
-<via x="59.055" y="19.05" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$24">
-<via x="59.055" y="5.08" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$25">
-<via x="17.78" y="3.175" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$26">
-<via x="18.415" y="12.7" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$27">
-<via x="15.875" y="8.89" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$28">
-<via x="19.685" y="10.16" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$29">
-<via x="13.335" y="27.305" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$30">
-<via x="13.335" y="30.48" extent="1-16" drill="0.55"/>
-</signal>
-<signal name="N$31">
-<via x="34.925" y="34.925" extent="1-16" drill="0.55"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -34,7 +34,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -192,6 +192,14 @@
 <wire x1="60.9654" y1="0" x2="60.9654" y2="43.8152" width="0" layer="20"/>
 <wire x1="60.9654" y1="43.8152" x2="0" y2="43.8152" width="0" layer="20"/>
 <wire x1="0" y1="43.8152" x2="0" y2="0" width="0" layer="20"/>
+<hole x="15.24" y="40.64" drill="3.2"/>
+<hole x="50.165" y="40.64" drill="3.2"/>
+<hole x="3.81" y="8.255" drill="3.2"/>
+<text x="20.955" y="5.715" size="1.778" layer="21">ECE 411 Team 12
+Authors: Miles Breslin, 
+Miguel Higgins Moy, 
+Noah Page, John Sharpe
+Revision C</text>
 </plain>
 <libraries>
 <library name="microbuilder">
@@ -1265,7 +1273,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <vertex x="60.96" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
-<wire x1="4.445" y1="25.92" x2="4.3012" y2="25.7762" width="0.8128" layer="1"/>
 <via x="6.731" y="33.401" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="VBAT" class="3">
@@ -1284,7 +1291,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="34.925" y="8.255" extent="1-16" drill="1"/>
 <wire x1="48.895" y1="8.255" x2="34.925" y2="8.255" width="1.27" layer="16"/>
 <wire x1="48.895" y1="8.255" x2="53.975" y2="3.175" width="1.27" layer="16"/>
-<via x="10.795" y="6.985" extent="1-16" drill="0.35"/>
+<via x="10.795" y="6.985" extent="1-16" drill="1"/>
 <wire x1="10.795" y1="6.985" x2="10.795" y2="6.858" width="1.27" layer="16"/>
 <wire x1="10.795" y1="6.985" x2="14.097" y2="10.287" width="1.27" layer="1"/>
 <wire x1="14.097" y1="10.287" x2="14.224" y2="10.414" width="1.27" layer="1"/>
@@ -1316,14 +1323,14 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="13.97" y1="19.685" x2="8.255" y2="25.4" width="0.508" layer="16"/>
 <wire x1="8.255" y1="26.543" x2="8.255" y2="25.4" width="0.508" layer="16"/>
 <wire x1="13.97" y1="19.685" x2="17.145" y2="19.685" width="0.508" layer="16"/>
-<via x="17.145" y="14.605" extent="1-16" drill="0.55"/>
+<via x="17.145" y="14.605" extent="1-16" drill="1"/>
 <wire x1="53.975" y1="8.255" x2="52.07" y2="6.35" width="0.8128" layer="1"/>
 <wire x1="52.07" y1="6.35" x2="48.26" y2="6.35" width="0.8128" layer="1"/>
-<via x="48.26" y="6.35" extent="1-16" drill="0.35"/>
+<via x="48.26" y="6.35" extent="1-16" drill="1"/>
 <wire x1="48.26" y1="6.35" x2="34.925" y2="6.35" width="0.8128" layer="16"/>
-<via x="34.925" y="6.35" extent="1-16" drill="0.35"/>
+<via x="34.925" y="6.35" extent="1-16" drill="1"/>
 <wire x1="34.925" y1="6.35" x2="26.67" y2="6.35" width="0.8128" layer="1"/>
-<via x="26.67" y="6.35" extent="1-16" drill="0.35"/>
+<via x="26.67" y="6.35" extent="1-16" drill="1"/>
 <wire x1="26.67" y1="6.35" x2="19.685" y2="13.335" width="0.8128" layer="16"/>
 <wire x1="19.685" y1="13.335" x2="19.685" y2="14.605" width="0.8128" layer="16"/>
 <wire x1="19.685" y1="14.605" x2="17.145" y2="14.605" width="0.8128" layer="16"/>
@@ -1853,6 +1860,10 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </board>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
