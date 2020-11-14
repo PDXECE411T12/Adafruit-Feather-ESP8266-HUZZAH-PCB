@@ -7010,6 +7010,8 @@ Allows current flow when high potential at base.</description>
 </class>
 <class number="2" name="ground" width="0.3048" drill="0">
 </class>
+<class number="3" name="battpower" width="1.27" drill="0">
+</class>
 </classes>
 <parts>
 <part name="U1" library="microbuilder" deviceset="CP2104" device=""/>
@@ -7105,6 +7107,11 @@ To-Do List:
 <text x="20.32" y="25.4" size="2.54" layer="91">Servo</text>
 <text x="63.5" y="93.98" size="1.778" layer="91">Linear Regulator</text>
 <text x="50.8" y="132.08" size="1.778" layer="91">LIPO Battery Port</text>
+<text x="81.28" y="160.02" size="1.778" layer="91">ECE 411 Team 12
+Authors: Miles Breslin, 
+Miguel Higgins Moy, 
+Noah Page, John Sharpe
+Revision C</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="190.5" y="132.08" smashed="yes">
@@ -7325,7 +7332,7 @@ To-Do List:
 <busses>
 </busses>
 <nets>
-<net name="VBAT" class="1">
+<net name="VBAT" class="3">
 <segment>
 <pinref part="U$2" gate="G$1" pin="VBAT"/>
 <pinref part="Q3" gate="G$1" pin="D"/>
