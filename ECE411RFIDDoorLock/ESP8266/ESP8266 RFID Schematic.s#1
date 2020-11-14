@@ -7081,11 +7081,11 @@ Allows current flow when high potential at base.</description>
 <sheets>
 <sheet>
 <plain>
-<text x="106.68" y="5.08" size="2.1844" layer="91">All Labeled GPIO Pins Connect to labeled ESP12 Pins</text>
-<text x="127" y="58.42" size="2.1844" layer="91">ESP12 Processor</text>
-<text x="104.14" y="66.04" size="1.778" layer="91">Reset Button</text>
-<text x="177.8" y="165.1" size="1.778" layer="91">USB to Serial Converter</text>
-<text x="10.16" y="149.86" size="1.778" layer="91">Processor: ESP12
+<text x="106.68" y="5.08" size="2.1844" layer="97">All Labeled GPIO Pins Connect to labeled ESP12 Pins</text>
+<text x="127" y="58.42" size="2.1844" layer="97">ESP12 Processor</text>
+<text x="104.14" y="66.04" size="1.778" layer="97">Reset Button</text>
+<text x="177.8" y="165.1" size="1.778" layer="97">USB to Serial Converter</text>
+<text x="10.16" y="149.86" size="1.778" layer="97">Processor: ESP12
 Power: USB Port or LIPO battery Input
 Actuator: Servo (connects to GPIO pins)
 Sensor: RFID RC-522
@@ -7094,19 +7094,32 @@ To-Do List:
 * Work on board layout and wiring
 * Modify code to send correct signal pulse to servo
 </text>
-<text x="45.72" y="142.24" size="5.08" layer="91">POWER</text>
-<text x="149.86" y="167.64" size="5.08" layer="91">USB INTERFACE</text>
-<text x="116.84" y="86.36" size="5.08" layer="91">PROCESSOR/IO</text>
+<text x="48.26" y="139.7" size="5.08" layer="97">POWER</text>
+<text x="149.86" y="167.64" size="5.08" layer="97">USB INTERFACE</text>
+<text x="116.84" y="86.36" size="5.08" layer="97">PROCESSOR/IO</text>
 <text x="33.02" y="55.88" size="1.778" layer="91">SDA</text>
 <text x="33.02" y="58.42" size="1.778" layer="91">SCK</text>
 <text x="33.02" y="60.96" size="1.778" layer="91">MOSI</text>
 <text x="33.02" y="63.5" size="1.778" layer="91">MISO</text>
 <text x="30.48" y="68.58" size="1.778" layer="91">GND</text>
 <text x="30.48" y="73.66" size="1.778" layer="91">3.3V</text>
-<text x="17.78" y="81.28" size="2.54" layer="91">RC522 RFID Sensor</text>
-<text x="20.32" y="25.4" size="2.54" layer="91">Servo</text>
-<text x="63.5" y="93.98" size="1.778" layer="91">Linear Regulator</text>
-<text x="50.8" y="132.08" size="1.778" layer="91">LIPO Battery Port</text>
+<text x="17.78" y="81.28" size="2.54" layer="97">RC522 RFID Sensor</text>
+<text x="20.32" y="25.4" size="2.54" layer="97">Servo</text>
+<text x="63.5" y="93.98" size="1.778" layer="97">Linear Regulator</text>
+<text x="50.8" y="132.08" size="1.778" layer="97">LIPO Battery Port</text>
+<text x="81.28" y="160.02" size="1.778" layer="97">ECE 411 Team 12
+Authors: Miles Breslin, 
+Miguel Higgins Moy, 
+Noah Page, John Sharpe
+Revision C</text>
+<wire x1="15.24" y1="137.16" x2="15.24" y2="86.36" width="0.1524" layer="97"/>
+<wire x1="15.24" y1="86.36" x2="106.68" y2="86.36" width="0.1524" layer="97"/>
+<wire x1="106.68" y1="86.36" x2="106.68" y2="137.16" width="0.1524" layer="97"/>
+<wire x1="106.68" y1="137.16" x2="15.24" y2="137.16" width="0.1524" layer="97"/>
+<wire x1="127" y1="162.56" x2="127" y2="99.06" width="0.1524" layer="97"/>
+<wire x1="127" y1="99.06" x2="228.6" y2="99.06" width="0.1524" layer="97"/>
+<wire x1="228.6" y1="99.06" x2="228.6" y2="162.56" width="0.1524" layer="97"/>
+<wire x1="228.6" y1="162.56" x2="127" y2="162.56" width="0.1524" layer="97"/>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="190.5" y="132.08" smashed="yes">
@@ -7841,22 +7854,6 @@ To-Do List:
 <pinref part="T2" gate="G$1" pin="B"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="182.88" y1="71.12" x2="187.96" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<wire x1="109.22" y1="86.36" x2="109.22" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="86.36" x2="12.7" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="86.36" x2="12.7" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="139.7" x2="109.22" y2="139.7" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$13" class="0">
-<segment>
-<wire x1="121.92" y1="99.06" x2="228.6" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="99.06" x2="228.6" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="167.64" x2="121.92" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="167.64" x2="121.92" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
