@@ -1313,6 +1313,33 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="59.055" y="19.05" extent="1-16" drill="0.55"/>
 <via x="59.055" y="5.08" extent="1-16" drill="0.55"/>
 <via x="50.8" y="3.175" extent="1-16" drill="0.55"/>
+<via x="1.27" y="33.655" extent="1-16" drill="0.55"/>
+<via x="1.27" y="27.305" extent="1-16" drill="0.55"/>
+<via x="1.27" y="21.59" extent="1-16" drill="0.55"/>
+<via x="1.27" y="40.005" extent="1-16" drill="0.55"/>
+<via x="13.335" y="42.545" extent="1-16" drill="0.55"/>
+<via x="21.59" y="42.545" extent="1-16" drill="0.55"/>
+<via x="24.13" y="38.1" extent="1-16" drill="0.55"/>
+<via x="30.48" y="34.925" extent="1-16" drill="0.55"/>
+<via x="39.37" y="34.925" extent="1-16" drill="0.55"/>
+<via x="46.355" y="41.91" extent="1-16" drill="0.55"/>
+<via x="53.34" y="42.545" extent="1-16" drill="0.55"/>
+<via x="59.69" y="42.545" extent="1-16" drill="0.55"/>
+<via x="59.69" y="10.795" extent="1-16" drill="0.55"/>
+<via x="59.055" y="1.27" extent="1-16" drill="0.55"/>
+<via x="52.07" y="1.27" extent="1-16" drill="0.55"/>
+<via x="44.45" y="1.27" extent="1-16" drill="0.55"/>
+<via x="36.83" y="1.27" extent="1-16" drill="0.55"/>
+<via x="26.67" y="1.27" extent="1-16" drill="0.55"/>
+<via x="17.78" y="1.27" extent="1-16" drill="0.55"/>
+<via x="8.89" y="1.27" extent="1-16" drill="0.55"/>
+<via x="1.27" y="2.54" extent="1-16" drill="0.55"/>
+<via x="1.27" y="9.525" extent="1-16" drill="0.55"/>
+<via x="1.27" y="15.24" extent="1-16" drill="0.55"/>
+<via x="35.56" y="30.48" extent="1-16" drill="0.35"/>
+<via x="22.86" y="18.415" extent="1-16" drill="0.55"/>
+<wire x1="35.56" y1="30.48" x2="34.925" y2="34.925" width="0" layer="19" extent="1-1"/>
+<wire x1="22.86" y1="18.415" x2="18.415" y2="12.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBAT" class="3">
 <contactref element="Q3" pad="3"/>
