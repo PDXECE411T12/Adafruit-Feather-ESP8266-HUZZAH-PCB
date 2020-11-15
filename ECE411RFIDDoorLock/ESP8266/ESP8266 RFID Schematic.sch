@@ -7077,6 +7077,7 @@ Allows current flow when high potential at base.</description>
 <part name="U$12" library="microbuilder" deviceset="3.3V" device=""/>
 <part name="U$13" library="microbuilder" deviceset="VBUS" device=""/>
 <part name="U$10" library="microbuilder" deviceset="VBUS" device=""/>
+<part name="GND14" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7106,7 +7107,7 @@ To-Do List:
 <text x="17.78" y="81.28" size="2.54" layer="97">RC522 RFID Sensor</text>
 <text x="20.32" y="25.4" size="2.54" layer="97">Servo</text>
 <text x="63.5" y="93.98" size="1.778" layer="97">Linear Regulator</text>
-<text x="50.8" y="132.08" size="1.778" layer="97">LIPO Battery Port</text>
+<text x="50.8" y="132.08" size="1.778" layer="97">Battery Port</text>
 <text x="81.28" y="160.02" size="1.778" layer="97">ECE 411 Team 12
 Authors: Miles Breslin, 
 Miguel Higgins Moy, 
@@ -7336,6 +7337,12 @@ Revision C</text>
 <instance part="U$10" gate="G$1" x="165.1" y="149.86" smashed="yes">
 <attribute name="VALUE" x="163.576" y="150.876" size="1.27" layer="96"/>
 </instance>
+<instance part="U1" gate="G$2" x="218.44" y="149.86" smashed="yes">
+<attribute name="NAME" x="213.36" y="156.21" size="1.778" layer="95"/>
+</instance>
+<instance part="GND14" gate="1" x="218.44" y="139.7" smashed="yes">
+<attribute name="VALUE" x="218.44" y="139.446" size="1.778" layer="96" align="top-center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7486,6 +7493,10 @@ Revision C</text>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="172.72" y1="15.24" x2="172.72" y2="17.78" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND14" gate="1" pin="GND"/>
+<pinref part="U1" gate="G$2" pin="TP"/>
+</segment>
 </net>
 <net name="GPIO14/SCK" class="0">
 <segment>
@@ -7626,13 +7637,15 @@ Revision C</text>
 <label x="157.48" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="68.58" y1="45.72" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
 <label x="81.28" y="45.72" size="1.778" layer="95"/>
 <pinref part="JP5" gate="G$1" pin="11"/>
+<wire x1="73.66" y1="45.72" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="45.72" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="45.72" x2="73.66" y2="27.94" width="0.1524" layer="91"/>
 <junction x="68.58" y="45.72"/>
 <pinref part="J3" gate="G$1" pin="2"/>
+<junction x="73.66" y="45.72"/>
 </segment>
 </net>
 <net name="GPIO4/SDA" class="0">
