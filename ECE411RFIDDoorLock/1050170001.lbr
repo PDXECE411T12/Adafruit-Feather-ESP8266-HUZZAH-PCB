@@ -141,14 +141,14 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="Package" value="None"/>
-<attribute name="Purchase-URL" value="https://pricing.snapeda.com/search/part/1050170001/?ref=eda"/>
-<attribute name="MP" value="1050170001"/>
 <attribute name="MF" value="Molex"/>
 <attribute name="Digi-Key_Part_Number" value="WM1399CT-ND"/>
+<attribute name="Package" value="None"/>
+<attribute name="MP" value="1050170001"/>
 <attribute name="Description" value="
 USB - micro B USB 2.0 Receptacle Connector 5 Position Surface Mount, Right Angle; Through Hole
 "/>
+<attribute name="Purchase-URL" value="https://pricing.snapeda.com/search/part/1050170001/?ref=eda"/>
 </technology>
 </technologies>
 </device>

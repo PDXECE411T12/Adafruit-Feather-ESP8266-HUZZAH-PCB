@@ -6330,7 +6330,6 @@ Allows current flow when high potential at base.</description>
 <part name="U$10" library="microbuilder" deviceset="VBUS" device=""/>
 <part name="GND14" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="J4" library="1050170001" deviceset="1050170001" device=""/>
-<part name="GND15" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="C5" library="microbuilder" deviceset="CAP_CERAMIC" device="0603MINI" value="100n"/>
 </parts>
 <sheets>
@@ -6600,9 +6599,6 @@ Limor Fried/Ladyada for Adafruit Industries</text>
 <attribute name="NAME" x="132.075" y="129.55" size="1.27125" layer="95"/>
 <attribute name="VALUE" x="132.074509375" y="106.6663" size="1.27136875" layer="96"/>
 </instance>
-<instance part="GND15" gate="1" x="157.48" y="106.68" smashed="yes">
-<attribute name="VALUE" x="157.48" y="106.426" size="1.778" layer="96" align="top-center"/>
-</instance>
 <instance part="C5" gate="G$1" x="154.94" y="111.76" smashed="yes" rot="R90">
 <attribute name="NAME" x="153.69" y="109.47" size="1.27" layer="95" font="vector" rot="R180" align="center"/>
 <attribute name="VALUE" x="153.69" y="114.06" size="1.27" layer="96" font="vector" rot="R180" align="center"/>
@@ -6699,9 +6695,13 @@ Limor Fried/Ladyada for Adafruit Industries</text>
 <pinref part="GND5" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="147.32" y1="116.84" x2="165.1" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="116.84" x2="157.48" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="J4" gate="G$1" pin="5"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="157.48" y1="116.84" x2="165.1" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="111.76" x2="157.48" y2="116.84" width="0.1524" layer="91"/>
+<junction x="157.48" y="116.84"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="6"/>
@@ -6759,11 +6759,6 @@ Limor Fried/Ladyada for Adafruit Industries</text>
 <segment>
 <pinref part="GND14" gate="1" pin="GND"/>
 <pinref part="U1" gate="G$2" pin="TP"/>
-</segment>
-<segment>
-<pinref part="C5" gate="G$1" pin="2"/>
-<pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="157.48" y1="111.76" x2="157.48" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO14/SCK" class="0">

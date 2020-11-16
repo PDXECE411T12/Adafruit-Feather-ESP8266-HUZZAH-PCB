@@ -6377,6 +6377,7 @@ Limor Fried/Ladyada for Adafruit Industries</text>
 <wire x1="127" y1="99.06" x2="228.6" y2="99.06" width="0.1524" layer="97"/>
 <wire x1="228.6" y1="99.06" x2="228.6" y2="162.56" width="0.1524" layer="97"/>
 <wire x1="228.6" y1="162.56" x2="127" y2="162.56" width="0.1524" layer="97"/>
+<text x="66.04" y="132.08" size="1.778" layer="95">Battery MAX Voltage 6v</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="190.5" y="132.08" smashed="yes">
