@@ -271,6 +271,8 @@ UsedLibraryUrn="urn:adsk.eagle:library:196"
 UsedLibraryUrn="urn:adsk.eagle:library:197"
 UsedLibraryUrn="urn:adsk.eagle:library:198"
 UsedLibraryUrn="urn:adsk.eagle:library:199"
+UsedLibrary="D:/Git/ECE411-RFID-Lock-Eagle/ECE411RFIDDoorLock/microbuilder.lbr"
+UsedLibrary="D:/Git/ECE411-RFID-Lock-Eagle/ECE411RFIDDoorLock/1050170001.lbr"
 
 [Win_1]
 Type="Control Panel"
