@@ -5989,13 +5989,10 @@ Allows current flow when high potential at base.</description>
 <text x="104.14" y="66.04" size="1.778" layer="97">Reset Button</text>
 <text x="177.8" y="165.1" size="1.778" layer="97">USB to Serial Converter</text>
 <text x="10.16" y="149.86" size="1.778" layer="97">Processor: ESP12
-Power: USB Port or LIPO battery Input
+Power: USB Port or 3x AA battery
 Actuator: Servo (connects to GPIO pins)
 Sensor: RFID RC-522
-To-Do List:
-* Clean up Schematic Layout
-* Work on board layout and wiring
-* Modify code to send correct signal pulse to servo
+
 </text>
 <text x="48.26" y="139.7" size="5.08" layer="97">POWER</text>
 <text x="149.86" y="167.64" size="5.08" layer="97">USB INTERFACE</text>
@@ -6014,8 +6011,7 @@ To-Do List:
 Authors: Miles Breslin, 
 Miguel Higgins Moy, 
 Noah Page, John Sharpe
-Revision D
-
+Revision E
 Adapted from the Adafruit Feather Huzzah by
 Limor Fried/Ladyada for Adafruit Industries</text>
 <wire x1="15.24" y1="137.16" x2="15.24" y2="86.36" width="0.1524" layer="97"/>

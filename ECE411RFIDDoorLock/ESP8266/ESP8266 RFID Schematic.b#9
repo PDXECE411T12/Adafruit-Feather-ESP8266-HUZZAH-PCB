@@ -34,7 +34,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -44,16 +44,16 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
@@ -198,7 +198,7 @@
 <text x="17.78" y="8.89" size="1.016" layer="21">ECE 411 Team 12 Fall 2020
 Authors: Miles Breslin, Miguel Higgins Moy, 
 Noah Page, John Sharpe
-                                                  Revision D
+                                                  Revision E
 Adapted from Adafruit Feather Huzzah by
 Limor Fried/Ladyada for Adafruit Industries</text>
 <text x="53.594" y="40.005" size="0.6096" layer="21">RST
@@ -1206,7 +1206,6 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="NAME" x="11.42226875" y="38.26976875" size="1.27008125" layer="25" rot="R180"/>
 <attribute name="PACKAGE" value="None" x="7.112" y="41.91" size="0.8128" layer="27" rot="R180" display="off"/>
 <attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/1050170001/?ref=eda" x="7.112" y="41.91" size="0.8128" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="11.4247" y="46.16266875" size="1.2708" layer="27" rot="R180"/>
 </element>
 <element name="C5" library="microbuilder" package="0603-MINI" value="100n" x="3.175" y="36.83" smashed="yes" rot="R270">
 <attribute name="NAME" x="3.1115" y="35.306" size="0.8128" layer="25" ratio="18" rot="R270"/>
@@ -1377,6 +1376,8 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <via x="13.335" y="24.003" extent="1-16" drill="0.35"/>
 <via x="8.509" y="16.383" extent="1-16" drill="0.35"/>
 <via x="8.509" y="18.288" extent="1-16" drill="0.35"/>
+<via x="8.255" y="22.987" extent="1-16" drill="0.35"/>
+<via x="8.255" y="21.082" extent="1-16" drill="0.35"/>
 </signal>
 <signal name="VBAT" class="3">
 <contactref element="Q3" pad="3"/>
