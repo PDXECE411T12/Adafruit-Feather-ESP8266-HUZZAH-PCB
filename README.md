@@ -1,3 +1,10 @@
+# Modified for:
+## ECE 411 Team 12 
+### RFID Smart Lock
+
+#### Fall 2020
+#### Authors: Miles Breslin, Miguel Higgins Moy, John Sharpe, Noah Page
+
 ## Adafruit Feather HUZZAH with ESP8266 - Loose Headers PCB
 
 <a href="http://www.adafruit.com/products/2821"><img src="assets/2821.jpg?raw=true" width="500px"><br/>
