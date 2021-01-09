@@ -1128,7 +1128,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="VALUE" x="11.43" y="1.143" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="JP4" library="microbuilder" package="1X16_ROUND" value="" x="57.15" y="22.225" smashed="yes" rot="R90">
-<attribute name="NAME" x="59.1312" y="40.5638" size="0.8128" layer="25" ratio="18" rot="R90"/>
+<attribute name="NAME" x="59.1312" y="39.9288" size="0.8128" layer="25" ratio="18" rot="R90"/>
 <attribute name="VALUE" x="60.325" y="1.905" size="0.4064" layer="27" ratio="10" rot="R90"/>
 </element>
 <element name="JP5" library="microbuilder" package="1X12_ROUND" value="" x="53.975" y="17.145" smashed="yes" rot="R90">

@@ -262,7 +262,7 @@ SDA</text>
 SDA</text>
 <text x="33.909" y="5.207" size="0.8128" layer="21" rot="R90">14
 SCK</text>
-<text x="36.449" y="5.08" size="0.8128" layer="21" rot="R90">13
+<text x="36.576" y="4.572" size="0.8128" layer="21" rot="R90">13
 MOSI</text>
 <text x="38.989" y="5.08" size="0.8128" layer="21" rot="R90">12
 MISO</text>
