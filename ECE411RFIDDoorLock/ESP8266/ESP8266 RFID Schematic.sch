@@ -6863,7 +6863,6 @@ Designed for 3x AA battery holder</text>
 </sheet>
 </sheets>
 <errors>
-<approved hash="102,1,81.28,109.22,OUT,3.3V,,,,"/>
 <approved hash="202,1,205.74,127,U1G$1,RI,,,,"/>
 <approved hash="104,1,175.26,152.4,U1G$1,VIO,N$14,,,"/>
 <approved hash="104,1,175.26,149.86,U1G$1,VDD,N$14,,,"/>
@@ -6873,13 +6872,14 @@ Designed for 3x AA battery holder</text>
 <approved hash="202,1,205.74,109.22,U1G$1,CTS,,,,"/>
 <approved hash="104,1,218.44,142.24,U1G$2,TP,GND,,,"/>
 <approved hash="104,1,119.38,27.94,X1,VCC,3.3V,,,"/>
-<approved hash="104,1,60.96,109.22,U3,IN,N$8,,,"/>
+<approved hash="104,1,53.34,109.22,U2,VIN,N$8,,,"/>
+<approved hash="104,1,78.74,109.22,U2,VOUT,3.3V,,,"/>
 <approved hash="113,1,132.611,89.431,FRAME1,,,,,"/>
-<approved hash="113,1,24.7227,66.2026,J1,,,,,"/>
-<approved hash="113,1,233.443,35.3339,JP4,,,,,"/>
-<approved hash="113,1,68.3429,58.6461,JP5,,,,,"/>
-<approved hash="113,1,60.2827,124.623,J2,,,,,"/>
-<approved hash="113,1,70.4427,28.1026,J3,,,,,"/>
+<approved hash="113,1,24.7227,66.1721,J1,,,,,"/>
+<approved hash="113,1,233.443,35.3644,JP4,,,,,"/>
+<approved hash="113,1,68.3429,58.6156,JP5,,,,,"/>
+<approved hash="113,1,60.2827,124.592,J2,,,,,"/>
+<approved hash="113,1,70.4427,28.0721,J3,,,,,"/>
 </errors>
 </schematic>
 </drawing>
